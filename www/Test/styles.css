@@ -1,0 +1,201 @@
+/* --------------------------------------------------- General */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e9ebee;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* --------------------------------------------------- Login */
+.login-container, .form-container, .data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.login-title, .form-title, .data-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.input-group, .form-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+}
+
+/* --------------------------------------------------- Botones */
+.btn-login, .btn-submit, .btn-cancel {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-logout {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    background-color: #e60000;
+}
+
+.btn-login, .btn-submit {
+    background-color: #007bff;
+}
+
+.btn-login:hover, .btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+
+/* --------------------------------------------------- Tablas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.data-table th, .data-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f7f8fa;
+}
+
+/* --------------------------------------------------- Formulario (Agregar/Editar) */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.form-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* --------------------------------------------------- Iconos de acción */
+.btn-action {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-action img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-action:hover {
+    transform: scale(1.1);
+}
+
+.edit img { filter: hue-rotate(120deg); } 
+.delete img { filter: hue-rotate(-60deg); } 
+.add img { filter: hue-rotate(90deg); } 
